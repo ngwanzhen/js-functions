@@ -1,6 +1,6 @@
 
 function letterCount(word){
-  word=word.replace(/[!,&@.]|_/g, "").replace(/\s/g, "")
+  word=word.replace(/[!,&@.]|_/g, "").replace(/\s/g, "").toLowerCase()
   // console.log(word)
   var arr=word.split("")
   var tempArr=word.split("")
@@ -32,4 +32,4 @@ if (ansObj.counter[j]!==0) {
 console.log (ansObj.alpha[j] + "-" + ansObj.counter[j])}
 }
 
-console.log(letterCount("a&p,p l.e!"))
+console.log(letterCount("A&p,p l.e!"))
